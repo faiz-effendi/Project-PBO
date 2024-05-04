@@ -1,17 +1,21 @@
 package main;
 import benda_dua_dimensi.*;
+import benda_tiga_dimensi.*;
 
 public class Main {
     
     static class MainMenu {
         MainMenu(){
-            SegiTiga x = new SegiTiga();
-//            x.luas(double a, double t);
-            x.keliling();
+            Kubus kubus = new Kubus(10);
+            System.out.println("Sisinya: "+ kubus.sisi);
+            System.out.println("Luas: "+ kubus.luas);
+            System.out.println("Keliling: " + kubus.keliling);
+            System.out.println("Volume: " + kubus.volume);
+
         }
     }
     
     public static void main(String[] args) {
-        MainMenu run = new MainMenu(); 
+        MainMenu run = new MainMenu();
     }
 }

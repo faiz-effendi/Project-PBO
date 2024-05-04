@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package benda_dua_dimensi;
 
-/**
- *
- * @author ASUS
- */
-public class Persegi {
+public class Persegi implements BendaDuaDimensi{
+    public float sisi;
+    public float luas;
+    public float keliling;
     
+    public Persegi(float sisi){
+        this.sisi = sisi;
+        luas();
+        keliling();
+    }
+    
+    public void luas(){
+        luas = sisi*sisi;
+    }
+    
+    public void keliling(){
+        keliling = sisi*4;
+    }
 }
