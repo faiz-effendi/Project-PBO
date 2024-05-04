@@ -7,11 +7,11 @@ public class Main {
     static class MainMenu {
         MainMenu(){
             Kubus kubus = new Kubus(10);
-            System.out.println("Sisinya: "+ kubus.sisi);
-            System.out.println("Luas: "+ kubus.luasPersegi);
+            System.out.println("Sisinya: " + kubus.sisi);
+            System.out.println("Luas: " + kubus.luasPersegi);
             System.out.println("Keliling: " + kubus.kelilingPersegi);
             System.out.println("Volume: " + kubus.volumeKubus);
-
+            System.out.println("Luas Permukaan Kubus: " + kubus.luasPermukaanKubus);
         }
     }
     

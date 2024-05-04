@@ -3,15 +3,19 @@ import benda_dua_dimensi.Persegi;
 
 public class Kubus extends Persegi{
     public float volumeKubus;
-    public float luasKubus;
+    public float luasPermukaanKubus;
     
     public Kubus(float sisi){
         super(sisi);
         volumeKubus();
+        luasPermukaanKubus();
     }
     
     public void volumeKubus(){
         volumeKubus = super.luasPersegi*super.sisi;
     }
    
+    public void luasPermukaanKubus(){
+        luasPermukaanKubus = super.luasPersegi*6;
+    }
 }
