@@ -6,16 +6,22 @@ public class Main {
     
     static class MainMenu {
         MainMenu(){
-            Kubus kubus = new Kubus(10);
-            System.out.println("Sisinya: " + kubus.sisi);
-            System.out.println("Luas: " + kubus.luasPersegi);
-            System.out.println("Keliling: " + kubus.kelilingPersegi);
+            float checkVar = 8.2f;
+            
+            Persegi persegi = new Persegi (checkVar);
+            System.out.println("Sisinya: " + persegi.sisi);
+            System.out.println("Luas: " + persegi.luasPersegi);
+            System.out.println("Keliling: " + persegi.kelilingPersegi);
+            System.out.println();
+            
+            Kubus kubus = new Kubus(checkVar);
             System.out.println("Volume: " + kubus.volumeKubus);
             System.out.println("Luas Permukaan Kubus: " + kubus.luasPermukaanKubus);
+            System.out.println();
         }
     }
     
     public static void main(String[] args) {
-        MainMenu run = new MainMenu();
+        new MainMenu();
     }
 }
