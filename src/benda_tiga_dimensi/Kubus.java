@@ -2,14 +2,16 @@ package benda_tiga_dimensi;
 import benda_dua_dimensi.Persegi;
 
 public class Kubus extends Persegi{
-    public float volume;
+    public float volumeKubus;
+    public float luasKubus;
     
     public Kubus(float sisi){
         super(sisi);
-        volume();
+        volumeKubus();
     }
     
-    public void volume(){
-        volume = super.luas*super.sisi;
+    public void volumeKubus(){
+        volumeKubus = super.luasPersegi*super.sisi;
     }
+   
 }

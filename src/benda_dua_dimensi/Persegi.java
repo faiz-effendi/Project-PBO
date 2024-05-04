@@ -2,8 +2,8 @@ package benda_dua_dimensi;
 
 public class Persegi implements BendaDuaDimensi{
     public float sisi;
-    public float luas;
-    public float keliling;
+    public float luasPersegi;
+    public float kelilingPersegi;
     
     public Persegi(float sisi){
         this.sisi = sisi;
@@ -12,10 +12,10 @@ public class Persegi implements BendaDuaDimensi{
     }
     
     public void luas(){
-        luas = sisi*sisi;
+        luasPersegi = sisi*sisi;
     }
     
     public void keliling(){
-        keliling = sisi*4;
+        kelilingPersegi = sisi*4;
     }
 }

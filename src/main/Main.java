@@ -8,9 +8,9 @@ public class Main {
         MainMenu(){
             Kubus kubus = new Kubus(10);
             System.out.println("Sisinya: "+ kubus.sisi);
-            System.out.println("Luas: "+ kubus.luas);
-            System.out.println("Keliling: " + kubus.keliling);
-            System.out.println("Volume: " + kubus.volume);
+            System.out.println("Luas: "+ kubus.luasPersegi);
+            System.out.println("Keliling: " + kubus.kelilingPersegi);
+            System.out.println("Volume: " + kubus.volumeKubus);
 
         }
     }
