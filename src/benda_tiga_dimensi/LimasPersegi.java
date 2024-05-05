@@ -6,8 +6,8 @@ import java.lang.Math;
 public class LimasPersegi extends Persegi{
     public double volumeLimasPersegi, luasPermukaanLimasPersegi, tinggi;
     
-    public LimasPersegi(double sisi, double tinggi){
-        super(sisi);
+    public LimasPersegi(double sisiPersegi, double tinggi){
+        super(sisiPersegi);
         this.tinggi = tinggi;
         volumeLimasPersegi();
         luasPermukaanLimasPersegi();
