@@ -9,27 +9,23 @@ public class Main {
     static class MainMenu {
         MainMenu(){
 
-            Persegi persegi = new Persegi (8);
-            System.out.println("Sisinya: " + persegi.sisi);
-            System.out.println("Luas: " + persegi.luasPersegi);
-            System.out.println("Keliling: " + persegi.kelilingPersegi);
-            System.out.println();
-            
-            SegiTiga segitiga = new SegiTiga (4);
-            System.out.println("Sisinya: " + segitiga.sisi);
-            System.out.println("Luas: " + segitiga.luasSegitiga);
-            System.out.println("Keliling: " + segitiga.kelilingSegitiga);
-            System.out.println();
-            
-            Kubus kubus = new Kubus(10);
-            System.out.println("Volume: " + kubus.volumeKubus);
-            System.out.println("Luas Permukaan Kubus: " + kubus.luasPermukaanKubus);
-            System.out.println();
+            Lingkaran lingkaran = new Lingkaran (7);
+            System.out.println("Lingkaran");
+            System.out.println("Jari-jari: " + lingkaran.jari);
+            System.out.println("Luas: " + lingkaran.luasLingkaran);
+            System.out.println("Keliling: " + lingkaran.kelilingLingkaran + "\n");
 
-            LimasSegitiga limasSegitiga = new LimasSegitiga(4);
-            System.out.println("Volume: " + limasSegitiga.volumeLimasSegitiga);
-            System.out.println("Luas Permukaan limasSegitiga: " + limasSegitiga.luasPermukaanLimasSegitiga);
-            System.out.println();
+            Tabung tabung = new Tabung (7, 3);
+            System.out.println("tabung");
+            System.out.println("Jari-jari: " + tabung.jari);
+            System.out.println("volume: " + tabung.volume );
+            System.out.println("Luas Permukaan: " + tabung.luasPermukaan + "\n");
+            
+            Bola bola = new Bola (7);
+            System.out.println("bola");
+            System.out.println("Jari-jari: " + bola.jari);
+            System.out.println("volume: " + bola.volume );
+            System.out.println("Luas Permukaan: " + bola.luasPermukaan + "\n");
         }
     }
     
