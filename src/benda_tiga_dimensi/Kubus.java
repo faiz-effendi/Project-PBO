@@ -7,6 +7,7 @@ public class Kubus extends Persegi{
     
     public Kubus(float sisi){
         super(sisi);
+        // this.sisi= super.sisi;
         volumeKubus();
         luasPermukaanKubus();
     }
