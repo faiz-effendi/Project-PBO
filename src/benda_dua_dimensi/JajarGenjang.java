@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package benda_dua_dimensi;
 
-/**
- *
- * @author ASUS
- */
-public class JajarGenjang {
+public class JajarGenjang implements BendaDuaDimensi{
+    public float alas;
+    public float tinggi;
+    public float sisimiring;
+    public float luasJajarGenjang;
+    public float kelilingJajarGenjang;
     
+    public JajarGenjang(float alas, float tinggi, float sisimiring){
+        this.sisimiring = sisimiring;
+        this.alas = alas;
+        this.tinggi = tinggi;
+        luas();
+        keliling();
+    }
+    
+    public void luas(){
+        luasJajarGenjang = alas*tinggi;
+    }
+    
+    public void keliling(){
+        kelilingJajarGenjang = 2*(sisimiring+alas);
+    }
 }
