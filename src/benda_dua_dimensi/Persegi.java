@@ -1,21 +1,21 @@
 package benda_dua_dimensi;
 
 public class Persegi implements BendaDuaDimensi{
-    public float sisi;
-    public float luasPersegi;
-    public float kelilingPersegi;
+    public double sisi;
+    public double luasPersegi;
+    public double kelilingPersegi;
     
-    public Persegi(float sisi){
+    public Persegi(double sisi){
         this.sisi = sisi;
-        luas();
-        keliling();
+        hitungLuas();
+        hitungKeliling();
     }
     
-    public void luas(){
+    public void hitungLuas(){
         luasPersegi = sisi*sisi;
     }
     
-    public void keliling(){
+    public void hitungKeliling(){
         kelilingPersegi = sisi*4;
     }
 }

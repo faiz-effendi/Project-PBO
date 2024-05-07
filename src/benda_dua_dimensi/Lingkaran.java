@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package benda_dua_dimensi;
 
-/**
- *
- * @author ASUS
- */
-public class Lingkaran {
+public class Lingkaran implements BendaDuaDimensi{
+    public double jari;
+    public double luasLingkaran;
+    public double kelilingLingkaran;
     
+    public Lingkaran(double jari){
+        this.jari = jari;
+        hitungLuas();
+        hitungKeliling();
+    }
+    
+    public void hitungLuas(){
+        luasLingkaran =Math.PI*jari*jari;
+    }
+    
+    public void hitungKeliling(){
+        kelilingLingkaran =Math.PI*jari*2;
+    }
 }

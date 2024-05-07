@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package benda_dua_dimensi;
 
-/**
- *
- * @author ASUS
- */
-public class PersegiPanjang {
+public class PersegiPanjang implements BendaDuaDimensi{
+    public double panjang;
+    public double lebar;
+    public double luasPersegiPanjang;
+    public double kelilingPersegiPanjang;
     
+    public PersegiPanjang(double panjang, double lebar){
+        this.panjang = panjang;
+        this.lebar = lebar;
+        hitungLuas();
+        hitungKeliling();
+    }
+    
+    public void hitungLuas(){
+        luasPersegiPanjang = panjang*lebar;
+    }
+    
+    public void hitungKeliling(){
+        kelilingPersegiPanjang = 2*(panjang+lebar);
+    }
 }
