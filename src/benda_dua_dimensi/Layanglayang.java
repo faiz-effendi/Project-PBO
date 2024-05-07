@@ -1,5 +1,6 @@
 package benda_dua_dimensi;
-import static java.lang.Math.*;
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
 public class Layanglayang implements BendaDuaDimensi{
     public double miring1; //sisi luar 1
@@ -12,16 +13,18 @@ public class Layanglayang implements BendaDuaDimensi{
         this.miring1 = miring1;
         this.miring2 = miring2;
         this.diagonalSimetri = diagonalSimetri;
-        hitungLuas();
-        hitungKeliling();
+        // hitungLuas();
+        // hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         double diagonalTegak = (sqrt(pow(miring1, 2) - pow(diagonalSimetri / 2, 2)) + sqrt(pow(miring2, 2) - pow(diagonalSimetri / 2, 2)));
         luasLayanglayang = diagonalTegak * diagonalSimetri /2;
+        return luasLayanglayang;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingLayanglayang = 2*(miring1+miring2);
+        return kelilingLayanglayang;
     }
 }

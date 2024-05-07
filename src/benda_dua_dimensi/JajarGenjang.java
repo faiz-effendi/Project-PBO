@@ -11,15 +11,17 @@ public class JajarGenjang implements BendaDuaDimensi{
         this.sisimiring = sisimiring;
         this.alas = alas;
         this.tinggi = tinggi;
-        hitungLuas();
-        hitungKeliling();
+    //     hitungLuas();
+    //     hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasJajarGenjang = alas*tinggi;
+        return luasJajarGenjang;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingJajarGenjang = 2*(sisimiring+alas);
+        return kelilingJajarGenjang;
     }
 }

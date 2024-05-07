@@ -3,20 +3,20 @@ package benda_tiga_dimensi;
 import benda_dua_dimensi.SegiTiga;
 
 public class PrismaSegiTiga extends SegiTiga{
-    public double volumePST, luasPermukaanPST, tinggi;
+    public double volumePrismaSegitiga, luasPermukaanPrismaSegitiga, tinggi;
     
-    public PrismaSegiTiga(double sisi, double tinggi){
-        super(sisi);
+    public PrismaSegiTiga(double sisiSegitiga, double tinggi){
+        super(sisiSegitiga);
         this.tinggi = tinggi;
-        hitungVolume();
-        hitungLuasPermukaan();
     }
     
-    public void hitungVolume(){
-        this.volumePST = super.luasSegitiga * tinggi;
+    public double hitungVolumePrismaSegitiga(){
+        volumePrismaSegitiga = super.luasSegitiga * tinggi;
+        return volumePrismaSegitiga;
     }
     
-    public void hitungLuasPermukaan(){
-        this.luasPermukaanPST = (super.luasSegitiga*2) + (super.sisi*tinggi*3);
+    public double hitungLuasPermukaanPrismaSegitiga(){
+        luasPermukaanPrismaSegitiga = (super.luasSegitiga*2) + (super.sisi*tinggi*3);
+        return luasPermukaanPrismaSegitiga;
     }
 }

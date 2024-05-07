@@ -7,15 +7,15 @@ public class Kubus extends Persegi{
     
     public Kubus(double sisi){
         super(sisi);
-        hitungVolume();
-        hitungLuasPermukaan();
     }
     
-    public void hitungVolume(){
+    public double hitungVolumeKubus(){
         volumeKubus = super.luasPersegi*super.sisi;
+        return volumeKubus;
     }
    
-    public void hitungLuasPermukaan(){
+    public double hitungLuasPermukaanKubus(){
         luasPermukaanKubus = super.luasPersegi*6;
+        return volumeKubus;
     }
 }

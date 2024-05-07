@@ -11,11 +11,13 @@ public class SegiTiga implements BendaDuaDimensi{
         hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasSegitiga = (Math.sqrt(3) / 4) * Math.pow(sisi, 2);
+        return luasSegitiga;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingSegitiga = sisi*3;
+        return kelilingSegitiga;
     }
 }

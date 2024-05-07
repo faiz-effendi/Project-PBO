@@ -7,15 +7,17 @@ public class LimasSegitiga extends SegiTiga {
     
     public LimasSegitiga(double sisi){
         super(sisi);
-        hitungVolume();
-        hitungLuasPermukaan();
+        // hitungVolume();
+        // hitungLuasPermukaan();
     }
     
-    public void hitungVolume(){
+    public double hitungVolumeLimasSegitiga(){
         volumeLimasSegitiga = super.luasSegitiga*super.sisi;
+        return volumeLimasSegitiga;
     }
    
-    public void hitungLuasPermukaan(){
+    public double hitungLuasPermukaanLimasSegitiga(){
         luasPermukaanLimasSegitiga = super.luasSegitiga*6;
+        return luasPermukaanLimasSegitiga;
     }
 }

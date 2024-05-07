@@ -8,15 +8,15 @@ public class PrismaPersegi extends Persegi{
     public PrismaPersegi(double sisiPersegi, double tinggi){
         super(sisiPersegi);
         this.tinggi = tinggi;
-        hitungVolume();
-        hitungLuasPermukaan();
     }
     
-    public void hitungVolume(){
+    public double hitungVolumePrismaPersegi(){
         volumePrismaPersegi = super.luasPersegi * tinggi;
+        return volumePrismaPersegi;
     }
     
-    public void hitungLuasPermukaan(){
+    public double hitungLuasPermukaanPrismaPersegi(){
         luasPermukaanPrismaPersegi = (super.luasPersegi*2) + ((super.sisi*tinggi)*4);
+        return luasPermukaanPrismaPersegi;
     }
 }

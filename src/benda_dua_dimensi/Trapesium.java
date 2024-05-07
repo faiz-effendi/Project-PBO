@@ -11,17 +11,20 @@ public class Trapesium implements BendaDuaDimensi{
         this.sisiA = sisiA;
         this.sisiB = sisiB;
         this.tinggi = tinggi;
-        hitungLuas();
-        hitungKeliling();
+        // hitungLuas();
+        // hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasTrapesium = (sisiA + sisiB)/2 * tinggi;
+        return luasTrapesium;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         double sisimiring;
         sisimiring = Math.sqrt(Math.pow((sisiB-sisiA), 2) + Math.pow(tinggi, 2));
         kelilingTrapesium = 2*sisimiring + sisiA + sisiB;
+        return kelilingTrapesium;
+
     }
 }

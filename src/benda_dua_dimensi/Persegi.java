@@ -7,15 +7,16 @@ public class Persegi implements BendaDuaDimensi{
     
     public Persegi(double sisi){
         this.sisi = sisi;
-        hitungLuas();
-        hitungKeliling();
+        // hitungLuas();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasPersegi = sisi*sisi;
+        return luasPersegi;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingPersegi = sisi*4;
+        return luasPersegi;
     }
 }

@@ -10,14 +10,16 @@ public class PersegiPanjang implements BendaDuaDimensi{
         this.panjang = panjang;
         this.lebar = lebar;
         hitungLuas();
-        hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasPersegiPanjang = panjang*lebar;
+        return luasPersegiPanjang;
+
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingPersegiPanjang = 2*(panjang+lebar);
+        return kelilingPersegiPanjang;
     }
 }

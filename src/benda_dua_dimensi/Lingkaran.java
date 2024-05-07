@@ -7,15 +7,15 @@ public class Lingkaran implements BendaDuaDimensi{
     
     public Lingkaran(double jari){
         this.jari = jari;
-        hitungLuas();
-        hitungKeliling();
     }
     
-    public void hitungLuas(){
+    public double hitungLuas(){
         luasLingkaran =Math.PI*jari*jari;
+        return luasLingkaran;
     }
     
-    public void hitungKeliling(){
+    public double hitungKeliling(){
         kelilingLingkaran =Math.PI*jari*2;
+        return kelilingLingkaran;
     }
 }
