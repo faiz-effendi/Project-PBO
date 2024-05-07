@@ -58,8 +58,27 @@ public class Main {
         }
     }
     
+    static class MenuSegiTiga {
+        MenuSegiTiga(){
+            double sisi = 8;
+            double tinggi = 12;
+            
+            SegiTiga segiTiga = new SegiTiga(sisi);
+            System.out.println("\nSEGITIGA ");
+            System.out.println("Sisi: " + segiTiga.sisi);
+            System.out.println("Luas: " + segiTiga.luasSegitiga);
+            System.out.println("Keliling: " + segiTiga.kelilingSegitiga + "\n");
+            
+            PrismaSegiTiga prismaST = new PrismaSegiTiga(sisi, tinggi);
+            System.out.println("PRISMA PERSEGI");
+            System.out.println("Volume: " + prismaST.volumePST);
+            System.out.println("Luas Permukaan: " + prismaST.luasPermukaanPST);
+        }
+    }
+    
     public static void main(String[] args) {
         new MenuPersegi();
         new MenuPersegiPanjang();
+        new MenuSegiTiga();
     }
 }
